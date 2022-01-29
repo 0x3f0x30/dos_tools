@@ -15,6 +15,6 @@ async def dos(HOST: str,PORT: int) -> None:
             print(f"packet dikirimkan ke {dest[0]}")
 
 if __name__ == "__main__":
-   print(figlet_format("DOS",font="larry3d"))
-   target = input("target host: ")
-   run(dos(target,80))
+    print(figlet_format("DOS",font="larry3d"))
+    target = input("target host: ")
+    run(dos(target,80))
