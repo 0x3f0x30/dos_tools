@@ -16,5 +16,7 @@ async def dos(HOST: str,PORT: int) -> None:
 
 if __name__ == "__main__":
     print(figlet_format("DOS",font="larry3d"))
+    print("Author: https://github.com/BenjaminXN")
+    print()
     target = input("target host: ")
     run(dos(target,80))
